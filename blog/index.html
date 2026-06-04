@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | The Reversible Home</title>
+  <meta name="description" content="Renter-friendly smart home guides — lighting, security, climate, and automation, all damage-free and fully reversible." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
+      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
+    } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="bg-cream text-ink antialiased">
+
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="../index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="../index.html" class="hover:text-sage-deep">Home</a></li>
+        <li><a href="../index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
+        <li><a href="../index.html#security" class="hover:text-sage-deep">Security</a></li>
+        <li><a href="../index.html#climate" class="hover:text-sage-deep">Climate</a></li>
+        <li><a href="../shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
+        <li><a href="../about.html" class="hover:text-sage-deep">About</a></li>
+        <li><a href="../index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+      </ul>
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="../index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="../index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="../index.html#security" class="block py-1 hover:text-sage-deep">Security</a></li>
+        <li><a href="../index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="../shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="../about.html" class="block py-1 hover:text-sage-deep">About</a></li>
+        <li><a href="../index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">The Blog</span>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Renter-Friendly Smart Home Guides</h1>
+      <p class="text-lg text-graysoft">Practical, aesthetic, deposit-safe. Every guide is built around zero-drill, fully reversible upgrades you can take with you.</p>
+    </div>
+
+    <!-- Featured -->
+    <a href="7-aesthetic-smart-lighting-upgrades.html" class="lift group block bg-white border border-line rounded-2xl overflow-hidden shadow-sm hover:shadow-xl mb-10 md:flex">
+      <div class="md:w-1/2 aspect-video md:aspect-auto bg-gradient-to-br from-sand to-line grid place-items-center text-7xl">&#128161;</div>
+      <div class="p-8 md:w-1/2 flex flex-col justify-center">
+        <span class="text-xs uppercase tracking-widest font-bold text-sage-deep mb-2">Lighting &middot; Featured</span>
+        <h2 class="font-display text-2xl md:text-3xl font-semibold mb-3 group-hover:text-sage-deep">The Renter's Guide to Smart Lighting: 7 Aesthetic Upgrades That Require Zero Drilling</h2>
+        <p class="text-graysoft mb-4">Ditch the harsh "boob light." Seven plug-and-play, deposit-safe lighting upgrades &mdash; from fake-hardwired pendants to adhesive sconces &mdash; that make your rental look like a high-end smart home.</p>
+        <span class="text-sage-deep font-semibold">Read the guide &rarr;</span>
+      </div>
+    </a>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-7">
+      <a href="ultimate-guide-renter-smart-lighting.html" class="lift group block bg-white border border-line rounded-2xl overflow-hidden shadow-sm hover:shadow-xl">
+        <div class="aspect-video bg-gradient-to-br from-sand to-line grid place-items-center text-5xl">&#128268;</div>
+        <div class="p-7">
+          <span class="text-xs uppercase tracking-widest font-bold text-sage-deep">Lighting</span>
+          <h3 class="font-display text-xl font-semibold my-2 group-hover:text-sage-deep">The Ultimate Guide to Renter-Friendly Smart Lighting</h3>
+          <p class="text-graysoft text-[0.95rem]">The fastest way to make a rental feel like yours &mdash; bulbs, strips, and a clip-on dimmer, no tools needed.</p>
+        </div>
+      </a>
+      <a href="renter-friendly-smart-security.html" class="lift group block bg-white border border-line rounded-2xl overflow-hidden shadow-sm hover:shadow-xl">
+        <div class="aspect-video bg-gradient-to-br from-sand to-line grid place-items-center text-5xl">&#128274;</div>
+        <div class="p-7">
+          <span class="text-xs uppercase tracking-widest font-bold text-sage-deep">Security</span>
+          <h3 class="font-display text-xl font-semibold my-2 group-hover:text-sage-deep">Renter-Friendly Smart Security: Protect Your Space Without Drilling</h3>
+          <p class="text-graysoft text-[0.95rem]">Cameras, a no-drill doorbell, and adhesive sensors for real peace of mind &mdash; deposit intact.</p>
+        </div>
+      </a>
+      <a href="smart-climate-control.html" class="lift group block bg-white border border-line rounded-2xl overflow-hidden shadow-sm hover:shadow-xl">
+        <div class="aspect-video bg-gradient-to-br from-sand to-line grid place-items-center text-5xl">&#127777;&#65039;</div>
+        <div class="p-7">
+          <span class="text-xs uppercase tracking-widest font-bold text-sage-deep">Climate</span>
+          <h3 class="font-display text-xl font-semibold my-2 group-hover:text-sage-deep">The Renter's Guide to Smart Climate Control</h3>
+          <p class="text-graysoft text-[0.95rem]">Comfort and lower bills without swapping the thermostat &mdash; plug-in, peel-and-stick, app-controlled.</p>
+        </div>
+      </a>
+      <a href="smart-home-automation-renters.html" class="lift group block bg-white border border-line rounded-2xl overflow-hidden shadow-sm hover:shadow-xl">
+        <div class="aspect-video bg-gradient-to-br from-sand to-line grid place-items-center text-5xl">&#129302;</div>
+        <div class="p-7">
+          <span class="text-xs uppercase tracking-widest font-bold text-sage-deep">Automation</span>
+          <h3 class="font-display text-xl font-semibold my-2 group-hover:text-sage-deep">Smart Home Automation for Renters</h3>
+          <p class="text-graysoft text-[0.95rem]">Turn a pile of gadgets into a connected home that runs itself &mdash; all of it portable, lease to lease.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../index.html" class="hover:text-white">Home</a></li>
+            <li><a href="index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="../shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../about.html" class="hover:text-white">About</a></li>
+            <li><a href="../contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="../privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
+        <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
+        <a href="../privacy.html" class="hover:text-white">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
