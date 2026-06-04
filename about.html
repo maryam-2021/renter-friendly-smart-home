@@ -5,81 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | The Reversible Home</title>
   <meta name="description" content="I was tired of living in 'temporary.' The story behind The Reversible Home — beautiful, fully reversible smart home upgrades for renters." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
+      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
+    } } }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">The Reversible <span>Home</span></a>
-      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="shop-my-rental.html">Shop My Rental</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="nav-cta"><a class="btn btn-primary" href="index.html#checklist">Free Checklist</a></li>
+<body class="bg-cream text-ink antialiased">
+
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="index.html" class="hover:text-sage-deep">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
+        <li><a href="about.html" class="text-sage-deep font-semibold">About</a></li>
+        <li><a href="index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+      </ul>
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="index.html#security" class="block py-1 hover:text-sage-deep">Security</a></li>
+        <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="about.html" class="block py-1 text-sage-deep font-semibold">About</a></li>
+        <li><a href="index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
 
-  <article class="article">
-    <div class="container article-wrap">
-      <span class="eyebrow">Our Story</span>
-      <h1>I Was Tired of Living in "Temporary."</h1>
-      <p class="lede">For years, I treated every rental like a waiting room.</p>
-
-      <p>Beige walls I wasn't allowed to paint. A light switch by the door and nothing else. Builder-grade fixtures that screamed <em>someone else's choices</em>. I kept telling myself I'd make it nice "once I owned a place" &mdash; and in the meantime, I lived in a home that never quite felt like mine.</p>
-
-      <p>The breaking point was a renovation I <em>couldn't</em> do. I'd fallen in love with smart lighting, automated blinds, a video doorbell, the whole dream &mdash; and every tutorial assumed I owned drills, walls I could destroy, and a landlord who didn't exist. One quote later, I almost gave up on the whole idea.</p>
-
-      <p>Then I discovered the renter's secret: <strong>you don't need permission to upgrade &mdash; you need the right products.</strong></p>
-
-      <p>I started small. A smart bulb that turned my harsh overhead light into a warm glow. A doorbell camera that mounted with adhesive, not screws. Motion sensors tucked behind furniture. Within a month, my "temporary" apartment ran like a high-end smart home &mdash; and not a single thing was permanent. When I eventually moved, the whole setup came down in two hours and came <em>with me.</em></p>
-
-      <p>That's why this site exists.</p>
-
-      <p>Everything here is something I've actually used, installed, and removed without leaving a mark. No drilling. No damage. No deposit drama. Just beautiful, intelligent, genuinely reversible upgrades for the millions of us who rent &mdash; and refuse to wait to live well.</p>
-
-      <p>You deserve a home that feels like yours <em>now.</em> Let me show you how.</p>
-
-      <p style="margin-top:2em;"><a class="btn btn-primary" href="index.html#checklist">Get the Free Reversible Upgrade Checklist &rarr;</a></p>
-    </div>
+  <article class="max-w-3xl mx-auto px-6 py-16 prose-rh">
+    <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Our Story</span>
+    <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">I Was Tired of Living in "Temporary."</h1>
+    <p class="text-xl text-graysoft">For years, I treated every rental like a waiting room.</p>
+    <p class="text-graysoft">Beige walls I wasn't allowed to paint. A light switch by the door and nothing else. Builder-grade fixtures that screamed <em>someone else's choices</em>. I kept telling myself I'd make it nice "once I owned a place" &mdash; and in the meantime, I lived in a home that never quite felt like mine.</p>
+    <p class="text-graysoft">The breaking point was a renovation I <em>couldn't</em> do. I'd fallen in love with smart lighting, automated blinds, a video doorbell, the whole dream &mdash; and every tutorial assumed I owned drills, walls I could destroy, and a landlord who didn't exist. One quote later, I almost gave up on the whole idea.</p>
+    <p class="text-graysoft">Then I discovered the renter's secret: <strong>you don't need permission to upgrade &mdash; you need the right products.</strong></p>
+    <p class="text-graysoft">I started small. A smart bulb that turned my harsh overhead light into a warm glow. A doorbell camera that mounted with adhesive, not screws. Motion sensors tucked behind furniture. Within a month, my "temporary" apartment ran like a high-end smart home &mdash; and not a single thing was permanent. When I eventually moved, the whole setup came down in two hours and came <em>with me.</em></p>
+    <p class="text-graysoft">That's why this site exists.</p>
+    <p class="text-graysoft">Everything here is something I've actually used, installed, and removed without leaving a mark. No drilling. No damage. No deposit drama. Just beautiful, intelligent, genuinely reversible upgrades for the millions of us who rent &mdash; and refuse to wait to live well.</p>
+    <p class="text-graysoft">You deserve a home that feels like yours <em>now.</em> Let me show you how.</p>
+    <p class="mt-8"><a href="index.html#checklist" class="inline-block bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark shadow-md">Get the Free Reversible Upgrade Checklist &rarr;</a></p>
   </article>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
         <div>
-          <div class="footer-brand">The Reversible Home</div>
-          <p>Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
         </div>
         <div>
-          <h4>Explore</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-            <li><a href="shop-my-rental.html">Shop My Rental</a></li>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy.html">Privacy &amp; Affiliate Disclaimer</a></li>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
         <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
-        <span>As an Amazon Associate, this site earns from qualifying purchases.</span>
+        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
       </div>
     </div>
   </footer>
-  <script src="assets/nav.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

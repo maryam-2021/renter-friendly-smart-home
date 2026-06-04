@@ -4,62 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Home Automation for Renters: A Connected Home You Can Take With You</title>
-  <meta name="description" content="Build a fully automated, connected smart home in your rental — no drilling, no rewiring. The best renter-friendly automation devices and how to set them up." />
+  <meta name="description" content="Build a fully automated, connected smart home in your rental — no drilling, no rewiring." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
+      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
+    } } }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="../index.html">The Reversible <span>Home</span></a>
-      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="index.html" class="active">Blog</a></li>
-        <li><a href="../shop-my-rental.html">Shop My Rental</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <li class="nav-cta"><a class="btn btn-primary" href="../index.html#checklist">Free Checklist</a></li>
+<body class="bg-cream text-ink antialiased">
+
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="../index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="../index.html" class="hover:text-sage-deep">Home</a></li>
+        <li><a href="../index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
+        <li><a href="../index.html#security" class="hover:text-sage-deep">Security</a></li>
+        <li><a href="../index.html#climate" class="hover:text-sage-deep">Climate</a></li>
+        <li><a href="../shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
+        <li><a href="../about.html" class="hover:text-sage-deep">About</a></li>
+        <li><a href="../index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+      </ul>
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="../index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="../index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="../index.html#security" class="block py-1 hover:text-sage-deep">Security</a></li>
+        <li><a href="../index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="../shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="../about.html" class="block py-1 hover:text-sage-deep">About</a></li>
+        <li><a href="../index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
 
-  <article class="article">
-    <div class="container article-wrap">
-      <p class="article-meta">Automation &middot; Renter Guides</p>
-      <h1>Smart Home Automation for Renters: A Connected Home You Can Take With You</h1>
+  <article class="max-w-3xl mx-auto px-6 py-14 prose-rh">
+<p class="article-meta">Automation &middot; Renter Guides</p>
+      <h1 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-4">Smart Home Automation for Renters: A Connected Home You Can Take With You</h1>
       <div class="disclosure"><em>This post contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. <a href="../privacy.html">Full disclosure.</a></em></div>
 
       <p class="lede">Individual smart gadgets are nice. A smart home is <em>magic</em>. The difference is automation &mdash; the moment your lights, plugs, sensors, and speakers stop being separate gizmos and start working together, anticipating your day, and quietly handling the little stuff for you.</p>
 
-      <p>And here's the part nobody tells renters: you can build that connected, automated home in an apartment you don't own, then unplug it and take the whole thing with you. No hub wired into the wall. No drilling. Let's build a smart home that's genuinely yours.</p>
+      <p class="text-graysoft">And here's the part nobody tells renters: you can build that connected, automated home in an apartment you don't own, then unplug it and take the whole thing with you. No hub wired into the wall. No drilling. Let's build a smart home that's genuinely yours.</p>
 
-      <h2>What "Automation" Really Means for Renters</h2>
+      <h2 class="font-display text-2xl font-semibold">What "Automation" Really Means for Renters</h2>
       <h3>From Individual Gadgets to a Connected System</h3>
-      <p>A smart bulb you control from your phone is convenient. But when that bulb dims automatically at sunset, the door sensor arms your camera as you leave, and your coffee maker clicks on when your alarm goes off &mdash; that's automation. It's a set of "if this, then that" rules built entirely in software, on top of inexpensive, removable devices.</p>
+      <p class="text-graysoft">A smart bulb you control from your phone is convenient. But when that bulb dims automatically at sunset, the door sensor arms your camera as you leave, and your coffee maker clicks on when your alarm goes off &mdash; that's automation. It's a set of "if this, then that" rules built entirely in software, on top of inexpensive, removable devices.</p>
       <h3>Why Renters Have an Automation Advantage</h3>
-      <p>Because renter-friendly automation relies on plug-in and adhesive devices rather than hardwired ones, your entire system is <em>portable</em>. Homeowners who hardwire everything are stuck with it; you can refine your setup in each new place, take every device with you, and never re-buy. Your smart home becomes a possession, not a renovation.</p>
+      <p class="text-graysoft">Because renter-friendly automation relies on plug-in and adhesive devices rather than hardwired ones, your entire system is <em>portable</em>. Homeowners who hardwire everything are stuck with it; you can refine your setup in each new place, take every device with you, and never re-buy. Your smart home becomes a possession, not a renovation.</p>
 
-      <h2>The 3 Best Renter-Friendly Automation Products</h2>
+      <h2 class="font-display text-2xl font-semibold">The 3 Best Renter-Friendly Automation Products</h2>
 
       <h3>1. Amazon Echo / Alexa Hub &mdash; The Brain of Your Setup</h3>
-      <p>An Echo (or Echo Dot) acts as the central brain and voice control for everything else. It connects your lights, plugs, and sensors, runs your routines, and lets you control the whole home by voice. It simply sits on a shelf and plugs into an outlet &mdash; the most powerful, least invasive hub a renter could ask for.</p>
+      <p class="text-graysoft">An Echo (or Echo Dot) acts as the central brain and voice control for everything else. It connects your lights, plugs, and sensors, runs your routines, and lets you control the whole home by voice. It simply sits on a shelf and plugs into an outlet &mdash; the most powerful, least invasive hub a renter could ask for.</p>
       <a class="afflink" href="#">[INSERT AFFILIATE LINK: Amazon Echo Dot]</a>
-      <div class="protip"><p><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> No installation at all &mdash; place it on a nightstand, shelf, or counter near an outlet. Tidy the power cord with removable adhesive cord clips so nothing dangles, and the whole thing relocates in seconds.</p></div>
+      <div class="protip"><p class="text-graysoft"><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> No installation at all &mdash; place it on a nightstand, shelf, or counter near an outlet. Tidy the power cord with removable adhesive cord clips so nothing dangles, and the whole thing relocates in seconds.</p></div>
 
       <h3>2. TP-Link Kasa Smart Plugs &mdash; Automate Anything That Plugs In</h3>
-      <p>Smart plugs are the connective tissue of a renter's automated home. Lamps, fans, coffee makers, holiday lights, heaters &mdash; anything with a plug becomes schedulable, voice-controllable, and automatable. Buy a multipack and you can transform a half-dozen "dumb" appliances in minutes.</p>
+      <p class="text-graysoft">Smart plugs are the connective tissue of a renter's automated home. Lamps, fans, coffee makers, holiday lights, heaters &mdash; anything with a plug becomes schedulable, voice-controllable, and automatable. Buy a multipack and you can transform a half-dozen "dumb" appliances in minutes.</p>
       <a class="afflink" href="#">[INSERT AFFILIATE LINK: TP-Link Kasa Smart Plugs]</a>
-      <div class="protip"><p><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> They plug directly into existing outlets &mdash; nothing to install or undo. If an outlet is awkwardly placed, use a removable adhesive cord channel rather than nailing anything.</p></div>
+      <div class="protip"><p class="text-graysoft"><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> They plug directly into existing outlets &mdash; nothing to install or undo. If an outlet is awkwardly placed, use a removable adhesive cord channel rather than nailing anything.</p></div>
 
       <h3>3. SwitchBot Bot &mdash; Push Any Button, No Wiring</h3>
-      <p>The SwitchBot is delightfully clever: a tiny robotic finger that sticks onto almost anything and physically presses a button or flips a switch on command. Use it on a coffee maker, a hard-to-reach light switch, or any appliance you wish were smart &mdash; all without modifying the device or the wall.</p>
+      <p class="text-graysoft">The SwitchBot is delightfully clever: a tiny robotic finger that sticks onto almost anything and physically presses a button or flips a switch on command. Use it on a coffee maker, a hard-to-reach light switch, or any appliance you wish were smart &mdash; all without modifying the device or the wall.</p>
       <a class="afflink" href="#">[INSERT AFFILIATE LINK: SwitchBot Bot]</a>
-      <div class="protip"><p><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> It attaches with a small adhesive pad designed to remove cleanly. For extra insurance on painted surfaces, stick it onto a removable adhesive strip first, then peel both off together when you move.</p></div>
+      <div class="protip"><p class="text-graysoft"><strong>&#129302; Pro Tip &mdash; Damage-Free Setup:</strong> It attaches with a small adhesive pad designed to remove cleanly. For extra insurance on painted surfaces, stick it onto a removable adhesive strip first, then peel both off together when you move.</p></div>
 
-      <h2>5 Renter-Friendly Automations to Start With</h2>
+      <h2 class="font-display text-2xl font-semibold">5 Renter-Friendly Automations to Start With</h2>
       <ol>
         <li><strong>Good Morning:</strong> Lights fade up, coffee maker (via smart plug) turns on, and Alexa reads your schedule &mdash; all triggered by your alarm.</li>
         <li><strong>Leaving Home:</strong> One phrase ("Alexa, I'm leaving") turns off lights, arms cameras, and cuts power to standby devices.</li>
@@ -67,49 +86,51 @@
         <li><strong>Movie Night:</strong> One tap dims the lights, sets the accent strips to a cinematic hue, and silences notifications.</li>
         <li><strong>Welcome Home:</strong> Location-based rules light the entryway and warm the room as you arrive.</li>
       </ol>
-      <p>Start with one or two &mdash; automation is addictive, and each new rule makes the others smarter.</p>
+      <p class="text-graysoft">Start with one or two &mdash; automation is addictive, and each new rule makes the others smarter.</p>
 
-      <h2>Conclusion</h2>
-      <p>Automation is what turns a pile of smart gadgets into a home that genuinely takes care of you. And because every piece here plugs in or sticks on, you're not building equity in someone else's property &mdash; you're building a portable, connected lifestyle that follows you from lease to lease. That's the renter's superpower.</p>
+      <h2 class="font-display text-2xl font-semibold">Conclusion</h2>
+      <p class="text-graysoft">Automation is what turns a pile of smart gadgets into a home that genuinely takes care of you. And because every piece here plugs in or sticks on, you're not building equity in someone else's property &mdash; you're building a portable, connected lifestyle that follows you from lease to lease. That's the renter's superpower.</p>
 
       <div class="cta-band" style="margin-top:1.5em;">
-        <h2>See the Kit That Runs My Apartment</h2>
-        <p>Explore my Shop My Rental page for my full renter-tested, damage-free automation kit &mdash; hub, plugs, and gadgets included.</p>
+        <h2 class="font-display text-2xl font-semibold">See the Kit That Runs My Apartment</h2>
+        <p class="text-graysoft">Explore my Shop My Rental page for my full renter-tested, damage-free automation kit &mdash; hub, plugs, and gadgets included.</p>
         <p style="margin-top:18px;"><a class="btn btn-light" href="../shop-my-rental.html">Shop My Rental &rarr;</a></p>
       </div>
-    </div>
   </article>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
         <div>
-          <div class="footer-brand">The Reversible Home</div>
-          <p>Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
         </div>
         <div>
-          <h4>Explore</h4>
-          <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="../shop-my-rental.html">Shop My Rental</a></li>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../index.html" class="hover:text-white">Home</a></li>
+            <li><a href="index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="../shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-            <li><a href="../privacy.html">Privacy &amp; Affiliate Disclaimer</a></li>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../about.html" class="hover:text-white">About</a></li>
+            <li><a href="../contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="../privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
         <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
-        <span>As an Amazon Associate, this site earns from qualifying purchases.</span>
+        <a href="../privacy.html" class="hover:text-white">Privacy Policy</a>
       </div>
     </div>
   </footer>
-  <script src="../assets/nav.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
