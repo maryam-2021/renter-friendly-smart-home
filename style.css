@@ -1,0 +1,107 @@
+/* ===========================================================
+   The Reversible Home — custom tweaks on top of Tailwind (CDN)
+   Most styling is done with Tailwind utility classes in the HTML.
+   This file holds font setup and a few small custom touches.
+   =========================================================== */
+
+:root {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+/* Offset anchored sections so the sticky navbar doesn't cover headings */
+[id] { scroll-margin-top: 90px; }
+
+body { font-family: var(--font-sans); }
+.font-display { font-family: var(--font-serif); }
+
+/* Subtle dotted texture for hero / accents (high-end Pinterest feel) */
+.bg-dots {
+  background-image: radial-gradient(rgba(111, 126, 107, 0.14) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Article prose niceties for blog posts */
+.prose-rh p { margin-bottom: 1.1em; line-height: 1.75; }
+.prose-rh h2 { margin-top: 1.8em; }
+.prose-rh h3 { margin-top: 1.3em; }
+.prose-rh ul, .prose-rh ol { margin: 0 0 1.2em 1.3em; }
+.prose-rh ul { list-style: disc; }
+.prose-rh ol { list-style: decimal; }
+.prose-rh li { margin-bottom: 0.5em; }
+
+/* Smooth card hover lift */
+.lift { transition: transform .2s ease, box-shadow .2s ease; }
+.lift:hover { transform: translateY(-4px); }
+
+/* ---- Blog article components (used inside .prose-rh) ---- */
+.article-meta {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #566b54; /* sage-deep */
+  margin-bottom: 0.6rem;
+}
+.lede { font-size: 1.2rem; line-height: 1.7; color: #4a463f; }
+
+.disclosure {
+  background: #f1ece3;            /* sand */
+  border: 1px solid #e7e2d8;      /* line */
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.9rem;
+  color: #6f6a63;                 /* graysoft */
+  margin: 1.2rem 0 1.6rem;
+}
+.disclosure a { color: #566b54; text-decoration: underline; }
+
+/* "Pro Tip" callout box */
+.protip {
+  background: #eef2ec;
+  border: 1px solid #cfdac9;
+  border-left: 4px solid #8a9a86; /* sage */
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 1.1rem 0;
+}
+.protip p { margin: 0; color: #41463e; }
+
+/* Affiliate link placeholder pills */
+.afflink {
+  display: block;
+  text-align: center;
+  border: 1.5px dashed #8a9a86;   /* sage */
+  color: #566b54;                 /* sage-deep */
+  background: #faf8f4;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0;
+  transition: background .15s ease;
+}
+.afflink:hover { background: #f1ece3; }
+
+/* In-article CTA band */
+.cta-band {
+  background: linear-gradient(135deg, #8a9a86, #566b54);
+  color: #fff;
+  border-radius: 22px;
+  padding: 2.4rem 1.8rem;
+  text-align: center;
+}
+.cta-band h2 { color: #fff; margin: 0 0 0.6rem; }
+.cta-band p { color: rgba(255,255,255,0.92); }
+
+/* Buttons reused inside articles */
+.btn {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-light { background: #fff; color: #2f2b27; }
+.btn-ghost { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
