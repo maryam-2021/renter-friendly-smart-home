@@ -34,6 +34,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
   <!-- Custom tweaks -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -94,17 +97,17 @@
     </div>
     <div class="grid md:grid-cols-3 gap-7">
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#128296;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="shield-check" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">No Drilling, Ever</h3>
         <p class="text-graysoft text-[0.97rem]">Not a single hole, anchor, or power tool required. Our picks rely on damage-free adhesives, tension, and smart placement &mdash; so your walls stay flawless and your deposit stays yours.</p>
       </article>
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#8617;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="refresh-ccw" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">Fully Reversible</h3>
         <p class="text-graysoft text-[0.97rem]">Move-out day should take an afternoon, not a weekend of spackling. Everything comes down clean and goes with you to the next place &mdash; an investment in <em>you</em>, not the building.</p>
       </article>
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#10024;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="sparkles" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">Smart &amp; Stylish</h3>
         <p class="text-graysoft text-[0.97rem]">Technology shouldn't look like a tangle of cheap plastic. We curate devices as gorgeous as they are intelligent &mdash; warm lighting, sleek sensors, and seamless automations that feel custom-designed.</p>
       </article>
@@ -264,5 +267,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
