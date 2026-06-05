@@ -6,6 +6,19 @@
   <title>The Reversible Home | Renter-Friendly Smart Home Upgrades</title>
   <meta name="description" content="Upgrade your rental and keep your deposit. Zero-drilling, fully reversible, high-end smart home upgrades for renters — lighting, security, and climate." />
 
+  <!-- Open Graph / Facebook / Pinterest -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thereversiblehome.com/" />
+  <meta property="og:title" content="The Reversible Home | Renter-Friendly Smart Home Upgrades" />
+  <meta property="og:description" content="Upgrade your rental and keep your deposit. Zero-drilling, fully reversible, high-end smart home upgrades for renters." />
+  <meta property="og:image" content="https://placehold.co/1000x1500/aebfa9/ffffff?text=The+Reversible+Home" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://thereversiblehome.com/" />
+  <meta property="twitter:title" content="The Reversible Home | Renter-Friendly Smart Home Upgrades" />
+  <meta property="twitter:description" content="Upgrade your rental and keep your deposit. Zero-drilling, fully reversible, high-end smart home upgrades." />
+  <meta property="twitter:image" content="https://placehold.co/1000x1500/aebfa9/ffffff?text=The+Reversible+Home" />
+
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,6 +47,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
   <!-- Custom tweaks -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -52,7 +68,7 @@
         <li><a href="#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
         <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
         <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
-        <li><a href="#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
       </ul>
 
       <!-- Mobile toggle -->
@@ -68,7 +84,7 @@
         <li><a href="#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
         <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
         <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
-        <li><a href="#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
@@ -80,7 +96,7 @@
       <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] mb-6">Upgrade Your Rental.<br class="hidden sm:block" /> Keep Your Deposit.</h1>
       <p class="max-w-2xl mx-auto text-lg text-graysoft mb-9">You don't have to own a place to live in a beautiful, intelligent one. Every upgrade here is fully reversible &mdash; no drilling, no damage, no awkward landlord conversations. Just peel, stick, plug in, and finally love the home you're renting.</p>
       <div class="flex flex-wrap gap-3 justify-center">
-        <a href="#checklist" class="bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-md">Send Me the Free Checklist &rarr;</a>
+        <a href="checklist.html" class="bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-md">Send Me the Free Checklist &rarr;</a>
         <a href="blog/index.html" class="bg-white text-ink px-7 py-3.5 rounded-full font-semibold border border-line hover:border-sage transition-colors">Read the Blog</a>
       </div>
     </div>
@@ -94,17 +110,17 @@
     </div>
     <div class="grid md:grid-cols-3 gap-7">
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#128296;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="shield-check" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">No Drilling, Ever</h3>
         <p class="text-graysoft text-[0.97rem]">Not a single hole, anchor, or power tool required. Our picks rely on damage-free adhesives, tension, and smart placement &mdash; so your walls stay flawless and your deposit stays yours.</p>
       </article>
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#8617;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="refresh-ccw" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">Fully Reversible</h3>
         <p class="text-graysoft text-[0.97rem]">Move-out day should take an afternoon, not a weekend of spackling. Everything comes down clean and goes with you to the next place &mdash; an investment in <em>you</em>, not the building.</p>
       </article>
       <article class="lift bg-white border border-line rounded-2xl p-8 shadow-sm hover:shadow-xl">
-        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center text-2xl mb-5">&#10024;</div>
+        <div class="w-14 h-14 rounded-xl bg-sand grid place-items-center mb-5"><i data-lucide="sparkles" class="w-7 h-7 text-sage-deep" stroke-width="1.5"></i></div>
         <h3 class="font-display text-xl font-semibold mb-2">Smart &amp; Stylish</h3>
         <p class="text-graysoft text-[0.97rem]">Technology shouldn't look like a tangle of cheap plastic. We curate devices as gorgeous as they are intelligent &mdash; warm lighting, sleek sensors, and seamless automations that feel custom-designed.</p>
       </article>
@@ -220,7 +236,7 @@
       <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-white/80 mb-3">Free Download</span>
       <h2 class="font-display text-3xl md:text-4xl font-semibold mb-4">Steal Our Renter-Approved Upgrade List</h2>
       <p class="max-w-xl mx-auto text-white/90 mb-7">Get the free <strong>Renter-Friendly Smart Home Checklist</strong> &mdash; 25 damage-free upgrades, organized room by room, with our exact product picks and the reversible install trick for each one.</p>
-      <a href="#" class="inline-block bg-white text-ink px-7 py-3.5 rounded-full font-semibold hover:shadow-lg transition-shadow">Send Me the Free Checklist &rarr;</a>
+      <a href="checklist.html" class="inline-block bg-white text-ink px-7 py-3.5 rounded-full font-semibold hover:shadow-lg transition-shadow">Send Me the Free Checklist &rarr;</a>
       <p class="text-white/75 text-sm mt-4">No spam, ever. Just the good stuff. Unsubscribe anytime.</p>
     </div>
   </section>
@@ -264,5 +280,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
