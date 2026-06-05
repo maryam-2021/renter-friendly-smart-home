@@ -7,10 +7,24 @@
   <meta name="description" content="How The Reversible Home uses affiliate links and protects your privacy. Full transparency on commissions and data." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: {
-      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
-      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
-    } } }
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +33,18 @@
 </head>
 <body class="bg-cream text-ink antialiased">
 
+  <!-- ============ Navbar ============ -->
   <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
     <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
       <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
       <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
-        <li><a href="index.html" class="hover:text-sage-deep">Home</a></li>
-        <li><a href="index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
-        <li><a href="index.html#security" class="hover:text-sage-deep">Security</a></li>
-        <li><a href="index.html#climate" class="hover:text-sage-deep">Climate</a></li>
-        <li><a href="shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
-        <li><a href="about.html" class="hover:text-sage-deep">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep transition-colors">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
+        <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
       </ul>
       <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
     </nav>
@@ -41,7 +56,7 @@
         <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
         <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
         <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
@@ -49,20 +64,23 @@
   <article class="max-w-3xl mx-auto px-6 py-16 prose-rh">
     <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Transparency</span>
     <h1 class="font-display text-4xl md:text-5xl font-bold mb-2">Privacy Policy &amp; Affiliate Disclaimer</h1>
-    <p class="text-sm uppercase tracking-widest text-graysoft mb-6">Last updated: [Date]</p>
-    <div class="rounded-xl bg-sand border border-line p-4 text-sm text-graysoft mb-8"><em>This is a clear, professional template covering the essentials. For full legal compliance in your specific jurisdiction (especially GDPR/CCPA), have a qualified professional review before publishing.</em></div>
+    <p class="text-sm uppercase tracking-widest text-graysoft mb-8">Last updated: June 2026</p>
 
-    <h2 class="font-display text-2xl font-semibold">Affiliate Disclaimer</h2>
-    <p class="text-graysoft">Hi, and thanks for being here. In the spirit of full transparency, I want you to know exactly how this site is supported.</p>
-    <p class="text-graysoft"><strong>The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program</strong> &mdash; an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com (and other partner retailers).</p>
-    <p class="text-graysoft">In plain English: some of the links on this site are affiliate links. If you click one and make a purchase, I may earn a small commission &mdash; <strong>at absolutely no extra cost to you.</strong> You pay the same price you would anyway; the retailer simply shares a tiny portion of the sale with me.</p>
-    <p class="text-graysoft">These commissions help me keep this site running, test new products, and create free resources like the Renter-Friendly Smart Home Checklist.</p>
+    <!-- ===== HIGHLY VISIBLE FTC AFFILIATE DISCLOSURE ===== -->
+    <div class="rounded-2xl bg-sage-light/30 border-2 border-sage p-6 md:p-8 mb-10 shadow-sm">
+      <h2 class="font-display text-2xl font-semibold text-sage-deep mb-3 flex items-center gap-2">&#9888;&#65039; FTC Affiliate Disclosure</h2>
+      <p class="text-ink text-[1.05rem] leading-relaxed mb-3"><strong>The Reversible Home is a participant in the Amazon Services LLC Associates Program,</strong> an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com (and other partner retailers).</p>
+      <p class="text-ink text-[1.05rem] leading-relaxed mb-3"><strong>We earn from qualifying purchases at no extra cost to you.</strong></p>
+      <p class="text-graysoft text-[0.95rem] leading-relaxed mb-0">In plain English: some of the links on this site are affiliate links. If you click one and make a purchase, I may earn a small commission &mdash; at absolutely no extra cost to you. You pay the same price you would anyway; the retailer simply shares a tiny portion of the sale with me. These commissions help me keep this site running, test new products, and create free resources like the Renter-Friendly Smart Home Checklist.</p>
+    </div>
+
     <p class="text-graysoft"><strong>My promise to you:</strong> I only ever recommend products I genuinely believe in and would use (or have used) in my own rental. A commission will never buy a recommendation. Your trust is worth far more to me than any sale.</p>
     <p class="text-graysoft"><em>As an Amazon Associate, I earn from qualifying purchases.</em></p>
 
-    <h2 class="font-display text-2xl font-semibold">Privacy Policy</h2>
-    <p class="text-sm uppercase tracking-widest text-graysoft">Last updated: [Date]</p>
-    <p class="text-graysoft">Your privacy matters to me. This policy explains what information The Reversible Home collects, how it's used, and the choices you have.</p>
+    <!-- ===== PRIVACY POLICY ===== -->
+    <h2 class="font-display text-2xl font-semibold mt-12">Privacy Policy</h2>
+    <p class="text-sm uppercase tracking-widest text-graysoft">Last updated: June 2026</p>
+    <p class="text-graysoft">Your privacy matters to me. This policy explains what information The Reversible Home collects, how it&rsquo;s used, and the choices you have.</p>
 
     <h3 class="font-display text-xl font-semibold text-sage-deep">Information I Collect</h3>
     <ul class="text-graysoft">
@@ -74,7 +92,7 @@
     <ul class="text-graysoft">
       <li>To send you the resources, updates, and emails you signed up for.</li>
       <li>To respond to your questions and messages.</li>
-      <li>To improve the site's content and experience.</li>
+      <li>To improve the site&rsquo;s content and experience.</li>
       <li>I will <strong>never</strong> sell, rent, or trade your personal information to third parties.</li>
     </ul>
 
@@ -82,21 +100,24 @@
     <p class="text-graysoft">Cookies are small files stored on your device that help the site function and help me understand traffic. You can disable cookies in your browser settings at any time, though some features may not work as intended.</p>
 
     <h3 class="font-display text-xl font-semibold text-sage-deep">Third-Party Links</h3>
-    <p class="text-graysoft">This site contains links to other websites (including affiliate partners like Amazon). I'm not responsible for the privacy practices or content of those external sites &mdash; please review their policies separately.</p>
+    <p class="text-graysoft">This site contains links to other websites (including affiliate partners like Amazon). I&rsquo;m not responsible for the privacy practices or content of those external sites &mdash; please review their policies separately.</p>
 
     <h3 class="font-display text-xl font-semibold text-sage-deep">Email &amp; Your Choices</h3>
     <p class="text-graysoft">If you subscribe, you can unsubscribe at any time using the link at the bottom of every email. You may also email me at <a href="mailto:hello@yourdomain.com" class="text-sage-deep hover:underline">hello@yourdomain.com</a> to request access to, correction of, or deletion of your personal data.</p>
 
-    <h3 class="font-display text-xl font-semibold text-sage-deep">Children's Privacy</h3>
+    <h3 class="font-display text-xl font-semibold text-sage-deep">Children&rsquo;s Privacy</h3>
     <p class="text-graysoft">This site is not directed at children under 13, and I do not knowingly collect information from them.</p>
 
     <h3 class="font-display text-xl font-semibold text-sage-deep">Changes to This Policy</h3>
-    <p class="text-graysoft">I may update this policy from time to time. Any changes will be posted here with a revised "Last updated" date.</p>
+    <p class="text-graysoft">I may update this policy from time to time. Any changes will be posted here with a revised &ldquo;Last updated&rdquo; date.</p>
 
     <h3 class="font-display text-xl font-semibold text-sage-deep">Contact</h3>
     <p class="text-graysoft">Questions about this policy? Reach me anytime at <a href="mailto:hello@yourdomain.com" class="text-sage-deep hover:underline">hello@yourdomain.com</a>.</p>
+
+    <div class="rounded-xl bg-sand border border-line p-4 text-sm text-graysoft mt-10"><em>This is a clear, professional template covering the essentials. For full legal compliance in your specific jurisdiction (especially GDPR/CCPA), have a qualified professional review before publishing.</em></div>
   </article>
 
+  <!-- ============ Footer ============ -->
   <footer class="bg-ink text-[#cfc7bd]">
     <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
       <div class="grid md:grid-cols-3 gap-10">

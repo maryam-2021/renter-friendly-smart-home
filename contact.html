@@ -7,10 +7,24 @@
   <meta name="description" content="Questions, collaborations, or just want to say hi? Reach out — I read every message and love hearing what renters create." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: {
-      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
-      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
-    } } }
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +33,18 @@
 </head>
 <body class="bg-cream text-ink antialiased">
 
+  <!-- ============ Navbar ============ -->
   <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
     <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
       <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
       <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
-        <li><a href="index.html" class="hover:text-sage-deep">Home</a></li>
-        <li><a href="index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
-        <li><a href="index.html#security" class="hover:text-sage-deep">Security</a></li>
-        <li><a href="index.html#climate" class="hover:text-sage-deep">Climate</a></li>
-        <li><a href="shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
-        <li><a href="about.html" class="hover:text-sage-deep">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep transition-colors">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
+        <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
       </ul>
       <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
     </nav>
@@ -41,58 +56,63 @@
         <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
         <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
         <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="max-w-6xl mx-auto px-6 py-16">
+  <!-- ============ Contact Section ============ -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
     <div class="text-center max-w-2xl mx-auto mb-12">
       <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Say Hello</span>
-      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Let's Talk &mdash; I'd Genuinely Love To Hear From You.</h1>
-      <p class="text-lg text-graysoft">Whether you've got a question, a product you're obsessed with, a "will this really come off the wall?" worry, or a collaboration in mind &mdash; my inbox is open and friendly.</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Let&rsquo;s Talk &mdash; I&rsquo;d Genuinely Love To Hear From You.</h1>
+      <p class="text-lg text-graysoft">Whether you&rsquo;ve got a question, a product you&rsquo;re obsessed with, a &ldquo;will this really come off the wall?&rdquo; worry, or a collaboration in mind &mdash; my inbox is open and friendly.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Info cards -->
       <div class="space-y-5">
         <div class="bg-white border border-line rounded-2xl p-7 shadow-sm">
           <h3 class="font-display text-lg font-semibold text-sage-deep mb-1">Have a question?</h3>
-          <p class="text-graysoft text-[0.97rem] mb-0">Stuck on a project or wondering if a gadget will work in your specific rental? Send it over. If I don't know the answer, I'll dig until I find it.</p>
+          <p class="text-graysoft text-[0.97rem] mb-0">Stuck on a project or wondering if a gadget will work in your specific rental? Send it over. If I don&rsquo;t know the answer, I&rsquo;ll dig until I find it.</p>
         </div>
         <div class="bg-white border border-line rounded-2xl p-7 shadow-sm">
-          <h3 class="font-display text-lg font-semibold text-sage-deep mb-1">Brands &amp; creators</h3>
-          <p class="text-graysoft text-[0.97rem] mb-0">I partner with companies whose products I'd genuinely use in my own apartment &mdash; damage-free, beautiful, and renter-tested. If that sounds like you, let's chat about working together.</p>
+          <h3 class="font-display text-lg font-semibold text-sage-deep mb-1">Brands &amp; Creators</h3>
+          <p class="text-graysoft text-[0.97rem] mb-0">I partner with companies whose products I&rsquo;d genuinely use in my own apartment &mdash; damage-free, beautiful, and renter-tested. If that sounds like you, let&rsquo;s chat about working together.</p>
         </div>
         <div class="bg-white border border-line rounded-2xl p-7 shadow-sm">
           <h3 class="font-display text-lg font-semibold text-sage-deep mb-1">Just want to say hi?</h3>
-          <p class="text-graysoft text-[0.97rem]">Those messages are my favorite. Tell me what you've upgraded &mdash; I love seeing what renters create.</p>
-          <p class="text-graysoft text-[0.97rem] mb-0">&#128231; <strong>Email:</strong> <a href="mailto:hello@yourdomain.com" class="text-sage-deep hover:underline">hello@yourdomain.com</a><br />&#9201;&#65039; I read every message and aim to reply within 2&ndash;3 business days.</p>
+          <p class="text-graysoft text-[0.97rem]">Those messages are my favorite. Tell me what you&rsquo;ve upgraded &mdash; I love seeing what renters create.</p>
+          <p class="text-graysoft text-[0.97rem] mb-0">&#128231; <strong>Email:</strong> <a href="mailto:hello@yourdomain.com" class="text-sage-deep hover:underline">hello@yourdomain.com</a><br />I read every message and aim to reply within 2&ndash;3 business days.</p>
           <p class="text-graysoft text-sm mt-3 mb-0">Prefer social? Find me on <a href="#" class="text-sage-deep hover:underline">Pinterest</a> &middot; <a href="#" class="text-sage-deep hover:underline">Instagram</a>.</p>
         </div>
       </div>
 
+      <!-- Contact form -->
       <div class="bg-white border border-line rounded-2xl p-8 shadow-sm">
-        <h3 class="font-display text-lg font-semibold mb-4">Send a message</h3>
-        <!-- Connect this form to your email service (Formspree, Netlify Forms, etc.) -->
+        <h3 class="font-display text-lg font-semibold mb-4">Send a Message</h3>
         <form action="#" method="post" class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-semibold mb-1.5">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required class="w-full px-3.5 py-3 rounded-lg border border-line bg-cream focus:outline-none focus:ring-2 focus:ring-sage/40" />
+            <input id="name" name="name" type="text" placeholder="Your name" required class="w-full px-4 py-3 rounded-xl border border-line bg-cream text-ink placeholder:text-graysoft/60 focus:outline-none focus:ring-2 focus:ring-sage/50 focus:border-sage transition-colors" />
           </div>
           <div>
             <label for="email" class="block text-sm font-semibold mb-1.5">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@email.com" required class="w-full px-3.5 py-3 rounded-lg border border-line bg-cream focus:outline-none focus:ring-2 focus:ring-sage/40" />
+            <input id="email" name="email" type="email" placeholder="you@email.com" required class="w-full px-4 py-3 rounded-xl border border-line bg-cream text-ink placeholder:text-graysoft/60 focus:outline-none focus:ring-2 focus:ring-sage/50 focus:border-sage transition-colors" />
           </div>
           <div>
             <label for="message" class="block text-sm font-semibold mb-1.5">Message</label>
-            <textarea id="message" name="message" placeholder="How can I help?" required class="w-full px-3.5 py-3 rounded-lg border border-line bg-cream min-h-[140px] focus:outline-none focus:ring-2 focus:ring-sage/40"></textarea>
+            <textarea id="message" name="message" placeholder="How can I help?" required class="w-full px-4 py-3 rounded-xl border border-line bg-cream text-ink placeholder:text-graysoft/60 min-h-[160px] focus:outline-none focus:ring-2 focus:ring-sage/50 focus:border-sage transition-colors"></textarea>
           </div>
-          <button type="submit" class="bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark shadow-md">Send Message</button>
+          <button type="submit" class="w-full bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-md">Send Message &rarr;</button>
         </form>
       </div>
+
     </div>
   </section>
 
+  <!-- ============ Footer ============ -->
   <footer class="bg-ink text-[#cfc7bd]">
     <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
       <div class="grid md:grid-cols-3 gap-10">
