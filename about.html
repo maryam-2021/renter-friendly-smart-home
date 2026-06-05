@@ -4,13 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | The Reversible Home</title>
-  <meta name="description" content="I was tired of living in 'temporary.' The story behind The Reversible Home — beautiful, fully reversible smart home upgrades for renters." />
+  <meta name="description" content="I was a renter tired of harsh lighting, drafty windows, and zero security. I spent months testing reversible, zero-drill smart home tech so you don't have to." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: {
-      colors: { cream:'#faf8f4', sand:'#f1ece3', ink:'#2f2b27', graysoft:'#6f6a63', line:'#e7e2d8', sage:{ light:'#aebfa9', DEFAULT:'#8a9a86', dark:'#6f7e6b', deep:'#566b54' } },
-      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
-    } } }
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +33,18 @@
 </head>
 <body class="bg-cream text-ink antialiased">
 
+  <!-- ============ Navbar ============ -->
   <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
     <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
       <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
       <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
-        <li><a href="index.html" class="hover:text-sage-deep">Home</a></li>
-        <li><a href="index.html#lighting" class="hover:text-sage-deep">Lighting</a></li>
-        <li><a href="index.html#security" class="hover:text-sage-deep">Security</a></li>
-        <li><a href="index.html#climate" class="hover:text-sage-deep">Climate</a></li>
-        <li><a href="shop-my-rental.html" class="hover:text-sage-deep">Shop</a></li>
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep transition-colors">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
         <li><a href="about.html" class="text-sage-deep font-semibold">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark shadow-sm">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
       </ul>
       <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
     </nav>
@@ -41,25 +56,41 @@
         <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
         <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
         <li><a href="about.html" class="block py-1 text-sage-deep font-semibold">About</a></li>
-        <li><a href="index.html#checklist" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
       </ul>
     </div>
   </header>
 
-  <article class="max-w-3xl mx-auto px-6 py-16 prose-rh">
-    <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Our Story</span>
-    <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">I Was Tired of Living in "Temporary."</h1>
-    <p class="text-xl text-graysoft">For years, I treated every rental like a waiting room.</p>
-    <p class="text-graysoft">Beige walls I wasn't allowed to paint. A light switch by the door and nothing else. Builder-grade fixtures that screamed <em>someone else's choices</em>. I kept telling myself I'd make it nice "once I owned a place" &mdash; and in the meantime, I lived in a home that never quite felt like mine.</p>
-    <p class="text-graysoft">The breaking point was a renovation I <em>couldn't</em> do. I'd fallen in love with smart lighting, automated blinds, a video doorbell, the whole dream &mdash; and every tutorial assumed I owned drills, walls I could destroy, and a landlord who didn't exist. One quote later, I almost gave up on the whole idea.</p>
-    <p class="text-graysoft">Then I discovered the renter's secret: <strong>you don't need permission to upgrade &mdash; you need the right products.</strong></p>
-    <p class="text-graysoft">I started small. A smart bulb that turned my harsh overhead light into a warm glow. A doorbell camera that mounted with adhesive, not screws. Motion sensors tucked behind furniture. Within a month, my "temporary" apartment ran like a high-end smart home &mdash; and not a single thing was permanent. When I eventually moved, the whole setup came down in two hours and came <em>with me.</em></p>
-    <p class="text-graysoft">That's why this site exists.</p>
-    <p class="text-graysoft">Everything here is something I've actually used, installed, and removed without leaving a mark. No drilling. No damage. No deposit drama. Just beautiful, intelligent, genuinely reversible upgrades for the millions of us who rent &mdash; and refuse to wait to live well.</p>
-    <p class="text-graysoft">You deserve a home that feels like yours <em>now.</em> Let me show you how.</p>
-    <p class="mt-8"><a href="index.html#checklist" class="inline-block bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark shadow-md">Get the Free Reversible Upgrade Checklist &rarr;</a></p>
-  </article>
+  <!-- ============ About Section ============ -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="grid md:grid-cols-5 gap-12 md:gap-16 items-start">
 
+      <!-- Photo placeholder -->
+      <div class="md:col-span-2 flex justify-center">
+        <div class="w-full max-w-[340px]">
+          <img src="https://placehold.co/500x600/f1ece3/6f7e6b?text=Your+Photo" alt="Photo of the author" class="w-full rounded-2xl shadow-xl border border-line" />
+          <p class="text-center text-xs text-graysoft mt-3">Replace with your own photo</p>
+        </div>
+      </div>
+
+      <!-- Story -->
+      <article class="md:col-span-3 prose-rh">
+        <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Our Story</span>
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">I Was Tired of Living in &ldquo;Temporary.&rdquo;</h1>
+        <p class="text-xl text-graysoft">I was a renter tired of harsh lighting, drafty windows, and zero security. But I refused to lose my security deposit.</p>
+        <p class="text-graysoft">For years, I treated every rental like a waiting room. Beige walls I wasn&rsquo;t allowed to paint. A light switch by the door and nothing else. Builder-grade fixtures that screamed <em>someone else&rsquo;s choices</em>. I kept telling myself I&rsquo;d make it nice &ldquo;once I owned a place&rdquo; &mdash; and in the meantime, I lived in a home that never quite felt like mine.</p>
+        <p class="text-graysoft">The breaking point was a renovation I <em>couldn&rsquo;t</em> do. I&rsquo;d fallen in love with smart lighting, automated blinds, a video doorbell, the whole dream &mdash; and every tutorial assumed I owned drills, walls I could destroy, and a landlord who didn&rsquo;t exist. One quote later, I almost gave up on the whole idea.</p>
+        <p class="text-graysoft">Then I discovered the renter&rsquo;s secret: <strong>you don&rsquo;t need permission to upgrade &mdash; you need the right products.</strong></p>
+        <p class="text-graysoft">I spent months testing reversible, zero-drill smart home tech so you don&rsquo;t have to. I started small. A smart bulb that turned my harsh overhead light into a warm glow. A doorbell camera that mounted with adhesive, not screws. Motion sensors tucked behind furniture. Within a month, my &ldquo;temporary&rdquo; apartment ran like a high-end smart home &mdash; and not a single thing was permanent. When I eventually moved, the whole setup came down in two hours and came <em>with me.</em></p>
+        <p class="text-graysoft">That&rsquo;s why this site exists.</p>
+        <p class="text-graysoft">This site is my curated list of the best renter-friendly upgrades. Everything here is something I&rsquo;ve actually used, installed, and removed without leaving a mark. No drilling. No damage. No deposit drama. Just beautiful, intelligent, genuinely reversible upgrades for the millions of us who rent &mdash; and refuse to wait to live well.</p>
+        <p class="text-graysoft">You deserve a home that feels like yours <em>now.</em> Let me show you how.</p>
+        <p class="mt-8"><a href="checklist.html" class="inline-block bg-sage text-white px-7 py-3.5 rounded-full font-semibold hover:bg-sage-dark shadow-md">Get the Free Reversible Upgrade Checklist &rarr;</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
   <footer class="bg-ink text-[#cfc7bd]">
     <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
       <div class="grid md:grid-cols-3 gap-10">
