@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Renter&rsquo;s Smart Home Starter Pack: 5 Plug-and-Play Devices | The Reversible Home</title>
+  <meta name="description" content="5 essential plug-and-play smart home devices every renter needs — completely wireless, zero tools, and portable from lease to lease." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom tweaks -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-ink antialiased">
+
+  <!-- ============ Navbar ============ -->
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep transition-colors">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
+        <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="index.html#security" class="block py-1 hover:text-sage-deep">Security</a></li>
+        <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 pt-10 pb-20">
+
+    <!-- Title area -->
+    <div class="mb-8">
+      <p class="uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Automation &middot; Renter Guides</p>
+      <h1 class="font-display text-3xl sm:text-4xl md:text-[2.6rem] font-bold leading-[1.15] mb-4">The Renter&rsquo;s Smart Home Starter Pack: 5 Plug-and-Play Devices You Can Take With You When You Move</h1>
+      <p class="text-graysoft text-sm">By <span class="text-ink font-medium">The Reversible Home</span> &middot; 8 min read</p>
+    </div>
+
+    <!-- Affiliate disclosure -->
+    <div class="disclosure mb-8"><em>This post contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. I only recommend products I&rsquo;d use in my own rental. <a href="privacy.html">Full disclosure.</a></em></div>
+
+    <!-- Hero image placeholder -->
+    <figure class="mb-8">
+      <div class="aspect-video rounded-2xl border-2 border-dashed border-sage/40 bg-sand grid place-items-center text-center px-4">
+        <div>
+          <div class="text-4xl mb-1" aria-hidden="true">&#128225;</div>
+          <p class="text-sm font-medium text-graysoft">Featured Image</p>
+          <p class="text-xs text-graysoft/70">Replace with a 1600&times;900 hero image (16:9)</p>
+        </div>
+      </div>
+      <figcaption class="text-center text-xs text-graysoft mt-2">A tidy moving box with smart home devices neatly packed makes a great hero shot.</figcaption>
+    </figure>
+
+    <!-- Table of Contents -->
+    <nav aria-label="Table of contents" class="mb-10 rounded-2xl border border-line bg-sand/50 p-6">
+      <h2 class="font-display text-lg font-semibold mb-3">&#128209; Table of Contents</h2>
+      <ol class="list-decimal list-inside space-y-1.5 text-[0.95rem]">
+        <li><a href="#upgrade-1" class="text-sage-deep hover:underline">The &ldquo;Brain&rdquo;: A Smart Display with a Built-in Hub</a></li>
+        <li><a href="#upgrade-2" class="text-sage-deep hover:underline">The &ldquo;Muscle&rdquo;: Smart Plugs</a></li>
+        <li><a href="#upgrade-3" class="text-sage-deep hover:underline">The &ldquo;Mood&rdquo;: Matter-Supported Smart Bulbs</a></li>
+        <li><a href="#upgrade-4" class="text-sage-deep hover:underline">The &ldquo;Magic&rdquo;: Wireless Motion &amp; Contact Sensors</a></li>
+        <li><a href="#upgrade-5" class="text-sage-deep hover:underline">The &ldquo;Remote&rdquo;: Smart Buttons &amp; Scene Switches</a></li>
+        <li><a href="#recommended-products" class="text-sage-deep hover:underline">My Recommended Products</a></li>
+      </ol>
+    </nav>
+
+    <!-- Article body -->
+    <article class="prose-rh">
+
+      <p>When most people hear &ldquo;smart home,&rdquo; they picture expensive, hardwired systems installed by professionals. They picture cutting into drywall, running wires through the attic, and installing in-wall touch panels.</p>
+
+      <p>For a renter, that sounds like a fast track to losing your security deposit.</p>
+
+      <p>But here is the secret the tech industry doesn&rsquo;t always advertise: The best smart home setups today are completely wireless, require zero tools, and can be packed into a single moving box when your lease is up.</p>
+
+      <p>You don&rsquo;t need to own your home to live in a fully automated, magical space. Here are the 5 essential, plug-and-play smart devices every renter needs to build a connected home they can take with them anywhere.</p>
+
+      <!-- Upgrade 1 -->
+      <h2 id="upgrade-1" class="scroll-mt-24">1. The &ldquo;Brain&rdquo;: A Smart Display with a Built-in Hub</h2>
+
+      <p><strong>The Vibe:</strong> The sleek, futuristic command center for your kitchen counter or nightstand.</p>
+
+      <p><strong>The Upgrade:</strong> In the past, you had to buy a separate &ldquo;hub&rdquo; to connect all your smart devices. Today, you just need a smart display like the Amazon Echo Show 8 or Google Nest Hub.</p>
+
+      <p>These devices act as the &ldquo;brain&rdquo; of your apartment. They connect to your Wi-Fi, control all your other smart devices, play music, show you the weather, and let you use voice commands. Because they just sit on a shelf and plug into a standard wall outlet, they are 100% renter-friendly.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Make sure the device you buy has a built-in smart home hub (like Matter, Zigbee, or Thread support). This means your other devices can connect directly to it without needing extra hardware.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Smart Displays with Built-in Hubs]</a>
+      </p>
+
+      <!-- Upgrade 2 -->
+      <h2 id="upgrade-2" class="scroll-mt-24">2. The &ldquo;Muscle&rdquo;: Smart Plugs (The Ultimate Renter Hack)</h2>
+
+      <p><strong>The Vibe:</strong> Turning your boring, &ldquo;dumb&rdquo; rental appliances into smart ones.</p>
+
+      <p><strong>The Upgrade:</strong> This is the single most important device for a renter. A Smart Plug goes between your wall outlet and the plug of any &ldquo;dumb&rdquo; device &mdash; like a cheap floor lamp, a coffee maker, or even a box fan. Suddenly, that device can be controlled by your phone, voice commands, or schedules.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Don&rsquo;t just use them for lights! Plug your rental&rsquo;s ugly, inefficient window AC unit into a heavy-duty smart plug (make sure it&rsquo;s rated for high wattage!). Now you can turn on the AC from your phone before you get home, or set it to turn off automatically when you leave for work to save on energy bills.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Standard Smart Plugs]</a>
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Heavy-Duty Smart Plugs for AC/Heaters]</a>
+      </p>
+
+      <!-- Upgrade 3 -->
+      <h2 id="upgrade-3" class="scroll-mt-24">3. The &ldquo;Mood&rdquo;: Matter-Supported Smart Bulbs</h2>
+
+      <p><strong>The Vibe:</strong> Erasing the harsh &ldquo;rental glow&rdquo; without changing the fixtures.</p>
+
+      <p><strong>The Upgrade:</strong> You can&rsquo;t change the ugly ceiling fixtures your landlord installed, but you can change the bulbs inside them. Screw in a Smart Bulb (like Philips Hue, Wyze, or Govee), and you instantly have access to millions of colors, warm-to-cool white adjustments, and dimming capabilities &mdash; all from your phone.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Look for bulbs that support the Matter smart home standard. Matter ensures that no matter what brand of smart bulb you buy, it will work seamlessly with your smart display, your phone, and your other devices, even if you switch from Apple to Google to Amazon in the future.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Matter-Supported Smart Bulbs]</a>
+      </p>
+
+      <!-- Upgrade 4 -->
+      <h2 id="upgrade-4" class="scroll-mt-24">4. The &ldquo;Magic&rdquo;: Wireless Motion &amp; Contact Sensors</h2>
+
+      <p><strong>The Vibe:</strong> Your apartment anticipating your every move.</p>
+
+      <p><strong>The Upgrade:</strong> Want your hallway lights to turn on automatically when you get up for a midnight glass of water? Want your phone to alert you if your roommate opens the fridge? Wireless motion sensors and door/window contact sensors are tiny, battery-operated devices that stick anywhere.</p>
+
+      <p>Because they are battery-powered and use adhesive backing, there are absolutely no wires to run. You just peel, stick, and connect them to your smart hub.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Standard adhesive can sometimes peel paint. The renter hack? Stick a tiny piece of painter&rsquo;s tape to the wall first, then apply a tiny dot of removable nano tape to the sensor, and stick it to the painter&rsquo;s tape. It holds like glue, but removes cleanly!</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Wireless Motion Sensors]</a>
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Smart Door/Window Sensors]</a>
+      </p>
+
+      <!-- Upgrade 5 -->
+      <h2 id="upgrade-5" class="scroll-mt-24">5. The &ldquo;Remote&rdquo;: Smart Buttons and Scene Switches</h2>
+
+      <p><strong>The Vibe:</strong> Tactile, satisfying control without opening an app.</p>
+
+      <p><strong>The Upgrade:</strong> Voice control is great, but sometimes you just want to press a button. Smart Buttons (like the Flic Smart Button or Aqara Cube) are tiny, wireless remotes you can stick anywhere.</p>
+
+      <p>Stick one on your nightstand to act as a &ldquo;master off&rdquo; switch for all your lights. Stick one by the front door to trigger your &ldquo;Leaving Home&rdquo; routine (which turns off all lights, locks the smart lock, and adjusts the climate).</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">These buttons usually come with adhesive mounts or magnetic bases. You can stick the mount to your wall with damage-free tape, and the button snaps right onto it magnetically.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Smart Buttons &amp; Scene Switches]</a>
+      </p>
+
+      <!-- Conclusion -->
+      <h2 id="conclusion" class="scroll-mt-24">Build a Smart Home That Travels With You</h2>
+
+      <p>The beauty of this renter-friendly smart home starter pack is that every single device is yours. You aren&rsquo;t installing a system into the walls of a building you don&rsquo;t own; you are building a portable ecosystem that travels with you from lease to lease.</p>
+
+      <p>When moving day comes, you just unplug the smart display, unscrew the smart bulbs, and pack the sensors into a box. Your next apartment is instantly a smart home, too.</p>
+
+    </article>
+
+    <!-- Recommended Products -->
+    <section id="recommended-products" class="mt-14 scroll-mt-24">
+      <h2 class="font-display text-2xl font-semibold mb-2">My Recommended Products</h2>
+      <p class="text-graysoft mb-6">The 5 essentials to build a portable smart home &mdash; all plug-and-play, all renter-safe.</p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128225;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Smart Display with Hub</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">The &ldquo;brain&rdquo; of your rental &mdash; voice control, screen, and built-in smart home hub in one device.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128268;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Smart Plugs (Multi-Pack)</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">The ultimate renter hack &mdash; make any &ldquo;dumb&rdquo; appliance smart with schedules and voice control.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128161;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Matter Smart Bulbs</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">Millions of colors and dimming &mdash; screw in, connect, and erase the &ldquo;rental glow&rdquo; forever.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- In-article CTA -->
+    <div class="cta-band mt-12">
+      <h2 class="font-display text-2xl font-semibold">Ready to Build Your Portable Smart Home?</h2>
+      <p>Want to see the exact product picks for every room? &#128073; Check out my complete Shop My Rental page. And if you want a room-by-room guide to setting this all up without damaging your walls, grab my free checklist!</p>
+      <p class="mt-5 flex flex-wrap gap-3 justify-center">
+        <a class="btn btn-light" href="shop-my-rental.html">Shop My Rental &rarr;</a>
+        <a class="btn btn-ghost" href="checklist.html">Download the Free Checklist</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Affiliate disclaimer -->
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
+        <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
+        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
