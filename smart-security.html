@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renter-Friendly Smart Security: No-Drill Cameras &amp; Smart Locks | The Reversible Home</title>
+  <meta name="description" content="The best no-drill smart security upgrades for renters — video doorbells, retrofit smart locks, entry sensors, and indoor cameras that protect your space without losing your deposit." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom tweaks -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-ink antialiased">
+
+  <!-- ============ Navbar (identical to index.html) ============ -->
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="smart-security.html" class="text-sage-deep font-semibold">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
+        <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="smart-security.html" class="block py-1 text-sage-deep font-semibold">Security</a></li>
+        <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 pt-10 pb-20">
+
+    <!-- Title area -->
+    <div class="mb-8">
+      <p class="uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-3">Security &middot; Renter Guides</p>
+      <h1 class="font-display text-3xl sm:text-4xl md:text-[2.6rem] font-bold leading-[1.15] mb-4">Renter-Friendly Smart Security: The Best No-Drill Cameras &amp; Smart Locks That Actually Work</h1>
+      <p class="text-graysoft text-sm">By <span class="text-ink font-medium">The Reversible Home</span> &middot; 7 min read</p>
+    </div>
+
+    <!-- Affiliate disclosure -->
+    <div class="disclosure mb-8"><em>This post contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. I only recommend products I'd use in my own rental. <a href="privacy.html">Full disclosure.</a></em></div>
+
+    <!-- Hero image placeholder -->
+    <figure class="mb-8">
+      <div class="aspect-video rounded-2xl border-2 border-dashed border-sage/40 bg-sand grid place-items-center text-center px-4">
+        <div>
+          <div class="text-4xl mb-1" aria-hidden="true">&#128247;</div>
+          <p class="text-sm font-medium text-graysoft">Featured Image</p>
+          <p class="text-xs text-graysoft/70">Replace with a 1600&times;900 hero image (16:9)</p>
+        </div>
+      </div>
+      <figcaption class="text-center text-xs text-graysoft mt-2">A secure, well-lit rental entryway makes a great hero shot.</figcaption>
+    </figure>
+
+    <!-- Table of Contents -->
+    <nav aria-label="Table of contents" class="mb-10 rounded-2xl border border-line bg-sand/50 p-6">
+      <h2 class="font-display text-lg font-semibold mb-3">&#128209; Table of Contents</h2>
+      <ol class="list-decimal list-inside space-y-1.5 text-[0.95rem]">
+        <li><a href="#upgrade-1" class="text-sage-deep hover:underline">The No-Drill Video Doorbell</a></li>
+        <li><a href="#upgrade-2" class="text-sage-deep hover:underline">Smart Locks That Fit Over Your Existing Deadbolt</a></li>
+        <li><a href="#upgrade-3" class="text-sage-deep hover:underline">Peel-and-Stick Window &amp; Door Entry Sensors</a></li>
+        <li><a href="#upgrade-4" class="text-sage-deep hover:underline">Plug-and-Play Indoor Cameras</a></li>
+        <li><a href="#upgrade-5" class="text-sage-deep hover:underline">Smart Lighting as a Security Deterrent</a></li>
+        <li><a href="#recommended-products" class="text-sage-deep hover:underline">My Recommended Products</a></li>
+      </ol>
+    </nav>
+
+    <!-- Article body -->
+    <article class="prose-rh">
+
+      <p>Let&rsquo;s talk about the unglamorous side of renting: the anxiety.</p>
+
+      <p>Maybe your apartment building has a buzzer that barely works. Maybe your front door faces a dimly lit hallway, or your ground-floor windows feel a little too accessible. You want peace of mind, but when you look at your lease, it clearly says: &ldquo;No drilling, no changing locks, no altering the premises.&rdquo;</p>
+
+      <p>So, how do you secure a space you don&rsquo;t own?</p>
+
+      <p>Welcome to the world of renter-friendly smart security. Today&rsquo;s technology has completely outpaced old-school landlord rules. You can now build a layered, professional-grade security system that requires zero screws, zero drilled holes, and zero permanent changes to your doors.</p>
+
+      <p>Here are the best no-drill smart security upgrades that will protect your space &mdash; and your security deposit.</p>
+
+      <!-- Upgrade 1 -->
+      <h2 id="upgrade-1" class="scroll-mt-24">1. The No-Drill Video Doorbell (That Actually Sticks)</h2>
+
+      <p><strong>The Vibe:</strong> Total porch awareness without the landlord&rsquo;s permission.</p>
+
+      <p><strong>The Upgrade:</strong> You don&rsquo;t need to screw a Ring or Nest doorbell into your door frame. Many top-tier battery-powered video doorbells now come with (or can be paired with) heavy-duty, damage-free mounting kits.</p>
+
+      <p>These use industrial-strength 3M VHB (Very High Bond) tape that can withstand rain, snow, and extreme heat, but can be removed with a little heat from a hairdryer when you move out.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">If your landlord is strictly against any adhesive on the exterior door, buy a window mount kit. You can suction-cup or use a tiny, removable adhesive hook to mount the doorbell on the sidelight window next to your door, giving you the exact same viewing angle without touching the wood!</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Battery-Powered Video Doorbells]</a>
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop No-Drill Doorbell Mount Kits]</a>
+      </p>
+
+      <!-- Upgrade 2 -->
+      <h2 id="upgrade-2" class="scroll-mt-24">2. Smart Locks That Fit Over Your Existing Deadbolt</h2>
+
+      <p><strong>The Vibe:</strong> Keyless entry, auto-unlock, and keeping your original keys.</p>
+
+      <p><strong>The Upgrade:</strong> Changing your physical deadbolt is a massive lease violation. But retrofit smart locks (like the August Wi-Fi Smart Lock or SwitchBot Lock) are the ultimate renter hack.</p>
+
+      <p>These brilliant devices install on the inside of your door, fitting directly over your existing thumb-turn. You simply slide it on, secure it with a few screws into the existing holes of your current lock, and snap the cover on. On the outside, your door looks completely unchanged. You still use your normal physical key, but now you can lock the door from your phone, give temporary digital keys to dog walkers, and auto-unlock when you walk up with groceries.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">When your lease is up, you just unsnap the smart lock, take it with you to your next apartment, and leave the original thumb-turn exactly as it was. Zero holes drilled, zero landlord anger.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Retrofit Smart Locks]</a>
+      </p>
+
+      <!-- Upgrade 3 -->
+      <h2 id="upgrade-3" class="scroll-mt-24">3. Peel-and-Stick Window &amp; Door Entry Sensors</h2>
+
+      <p><strong>The Vibe:</strong> Boutique-level security for your weakest points.</p>
+
+      <p><strong>The Upgrade:</strong> Sliding glass doors and ground-floor windows are a renter&rsquo;s biggest vulnerability. Smart entry sensors are tiny, two-piece devices that stick to the frame and the door/window itself. If the two pieces separate (meaning the door or window was opened), it instantly sends an alert to your phone.</p>
+
+      <p>They require no wiring and no screws. They just use strong, damage-free adhesive tape.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Buy a multi-pack and put them everywhere. Stick one on your front door, your balcony slider, and even your medicine cabinet or liquor cabinet if you have roommates. You can also use them to alert you if your pet sneaks out the back door!</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Smart Entry Sensors (Multi-Pack)]</a>
+      </p>
+
+      <!-- Upgrade 4 -->
+      <h2 id="upgrade-4" class="scroll-mt-24">4. Plug-and-Play Indoor Cameras (With Damage-Free Mounting)</h2>
+
+      <p><strong>The Vibe:</strong> Keep an eye on your pets, your packages, and your space.</p>
+
+      <p><strong>The Upgrade:</strong> You don&rsquo;t need to mount indoor security cameras high up on the wall with drywall anchors. Modern smart cameras (like the Wyze Cam or Blink Mini) are small, beautiful, and designed to sit on a shelf or bookcase.</p>
+
+      <p>But if you want that high-angle &ldquo;corner of the ceiling&rdquo; view? Use damage-free adhesive hooks (like Command Hooks) or magnetic mounts. Many cameras have a magnetic base; you can stick a small adhesive metal plate to the top of your door frame or high on the wall, and the camera will snap right onto it.</p>
+
+      <aside class="my-6 rounded-2xl border border-sage/40 border-l-4 border-l-sage bg-sage-light/20 p-5 sm:p-6 shadow-sm">
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 text-2xl leading-none" aria-hidden="true">&#128161;</span>
+          <div>
+            <p class="font-display font-semibold text-sage-deep mb-1">Pro-Tip for Renters</p>
+            <p class="text-ink/85 m-0">Hate the look of the USB power cord running down your wall? Use a paintable adhesive cord cover to hide the wire completely. It blends into your wall and peels off cleanly at move-out time.</p>
+          </div>
+        </div>
+      </aside>
+
+      <p class="flex flex-wrap gap-3">
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Indoor Smart Cameras]</a>
+        <a class="afflink" href="#" rel="nofollow sponsored">[INSERT AFFILIATE LINK: Shop Damage-Free Cord Covers]</a>
+      </p>
+
+      <!-- Upgrade 5 -->
+      <h2 id="upgrade-5" class="scroll-mt-24">5. Smart Lighting as a Security Deterrent</h2>
+
+      <p><strong>The Vibe:</strong> &ldquo;Someone is definitely home.&rdquo;</p>
+
+      <p><strong>The Upgrade:</strong> The oldest security trick in the book is leaving a light on, but doing it manually is annoying. By pairing the smart lighting hacks from our <a href="smart-lighting.html" class="text-sage-deep hover:underline font-medium">Ultimate Guide to Renter-Friendly Smart Lighting</a> with your security system, you create a powerful deterrent.</p>
+
+      <p>Set your smart bulbs or smart plugs to automatically turn on at sunset and turn off at bedtime. If you go out of town, use the &ldquo;vacation mode&rdquo; on your smart home app to randomize the lights. To anyone watching your apartment, it looks like you are home relaxing.</p>
+
+      <!-- Conclusion -->
+      <h2 id="conclusion" class="scroll-mt-24">Secure Your Space, Keep Your Deposit</h2>
+
+      <p>You shouldn&rsquo;t have to choose between feeling safe in your home and getting your security deposit back. With these no-drill smart security upgrades, you can build a layered, high-tech defense system that travels with you from lease to lease.</p>
+
+    </article>
+
+    <!-- Recommended Products -->
+    <section id="recommended-products" class="mt-14 scroll-mt-24">
+      <h2 class="font-display text-2xl font-semibold mb-2">My Recommended Products</h2>
+      <p class="text-graysoft mb-6">My renter-approved security picks to get started. Links are affiliate links &mdash; at no extra cost to you.</p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128276;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Battery-Powered Video Doorbell</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">See who&rsquo;s at your door from your phone &mdash; mounts with adhesive, no wiring required.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128274;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Retrofit Smart Lock</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">Snaps over your existing deadbolt &mdash; keyless entry, digital keys, auto-lock, zero modifications.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="lift flex flex-col rounded-2xl border border-line bg-white overflow-hidden shadow-sm">
+          <div class="aspect-square bg-sand border-b border-line grid place-items-center text-center px-4">
+            <div>
+              <div class="text-3xl mb-1" aria-hidden="true">&#128247;</div>
+              <p class="text-xs text-graysoft">Product Image</p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <h3 class="font-display text-lg font-semibold mb-1">Indoor Smart Camera</h3>
+            <p class="text-sm text-graysoft mb-4 flex-1">Shelf-friendly, app-connected indoor camera &mdash; magnetic mount option for high-angle views.</p>
+            <a href="#" rel="nofollow sponsored" class="block text-center bg-sage text-white px-4 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Check Price on Amazon</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- In-article CTA -->
+    <div class="cta-band mt-12">
+      <h2 class="font-display text-2xl font-semibold">See My Favorite Renter-Friendly Products</h2>
+      <p>Want to see the exact products I use to secure my rental? &#128073; Check out the &ldquo;Smart Security&rdquo; section on my Shop My Rental page. And if you want to make sure your entire apartment is secure and damage-free, grab my free checklist!</p>
+      <p class="mt-5 flex flex-wrap gap-3 justify-center">
+        <a class="btn btn-light" href="shop-my-rental.html">Shop My Rental &rarr;</a>
+        <a class="btn btn-ghost" href="checklist.html">Download the Free Checklist</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- ============ Footer (identical to index.html) ============ -->
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Affiliate disclaimer -->
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
+        <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
+        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
