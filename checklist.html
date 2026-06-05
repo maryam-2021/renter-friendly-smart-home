@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Renter-Friendly Smart Home Checklist | The Reversible Home</title>
+  <meta name="description" content="Download the free Renter-Friendly Smart Home Checklist — 25 damage-free upgrades, room by room, with reversible install tips." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#faf8f4',
+            sand: '#f1ece3',
+            ink: '#2f2b27',
+            graysoft: '#6f6a63',
+            line: '#e7e2d8',
+            sage: { light: '#aebfa9', DEFAULT: '#8a9a86', dark: '#6f7e6b', deep: '#566b54' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom tweaks -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-ink antialiased">
+
+  <!-- ============ Navbar ============ -->
+  <header id="site-nav" class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-line transition-shadow">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="font-display text-xl font-bold tracking-tight">The Reversible <span class="text-sage-deep">Home</span></a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium text-graysoft">
+        <li><a href="index.html" class="hover:text-sage-deep transition-colors">Home</a></li>
+        <li><a href="index.html#lighting" class="hover:text-sage-deep transition-colors">Lighting</a></li>
+        <li><a href="index.html#security" class="hover:text-sage-deep transition-colors">Security</a></li>
+        <li><a href="index.html#climate" class="hover:text-sage-deep transition-colors">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="hover:text-sage-deep transition-colors">Shop</a></li>
+        <li><a href="about.html" class="hover:text-sage-deep transition-colors">About</a></li>
+        <li><a href="checklist.html" class="inline-block bg-sage text-white px-5 py-2.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Free Checklist</a></li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button id="nav-toggle" class="md:hidden text-2xl leading-none" aria-label="Menu">&#9776;</button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-cream px-6 py-4">
+      <ul class="flex flex-col gap-3 text-graysoft font-medium">
+        <li><a href="index.html" class="block py-1 hover:text-sage-deep">Home</a></li>
+        <li><a href="index.html#lighting" class="block py-1 hover:text-sage-deep">Lighting</a></li>
+        <li><a href="index.html#security" class="block py-1 hover:text-sage-deep">Security</a></li>
+        <li><a href="index.html#climate" class="block py-1 hover:text-sage-deep">Climate</a></li>
+        <li><a href="shop-my-rental.html" class="block py-1 hover:text-sage-deep">Shop</a></li>
+        <li><a href="about.html" class="block py-1 hover:text-sage-deep">About</a></li>
+        <li><a href="checklist.html" class="inline-block mt-1 bg-sage text-white px-5 py-2.5 rounded-full font-semibold">Free Checklist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ Checklist hero ============ -->
+  <section class="bg-gradient-to-b from-cream to-sand">
+    <div class="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
+      <span class="inline-block uppercase tracking-[0.18em] text-xs font-bold text-sage-deep mb-4">Free Download</span>
+      <h1 class="font-display text-4xl md:text-5xl font-bold leading-[1.1] mb-6">The Renter-Friendly Smart Home Checklist</h1>
+      <p class="max-w-xl mx-auto text-lg text-graysoft mb-8">25 damage-free upgrades, organized room by room, with exact product picks and the reversible install trick for each one. Zero drilling. Zero deposit risk.</p>
+
+      <!-- Placeholder form — swap with your email provider embed -->
+      <div class="max-w-md mx-auto rounded-2xl border border-line bg-white p-8 shadow-lg">
+        <p class="font-display text-xl font-semibold mb-2">Get Instant Access</p>
+        <p class="text-sm text-graysoft mb-5">Enter your email and I'll send the checklist straight to your inbox.</p>
+
+        <form action="#" method="POST" class="space-y-4">
+          <input type="email" placeholder="you@email.com" required class="w-full px-4 py-3 rounded-xl border border-line bg-cream text-ink placeholder:text-graysoft/60 focus:outline-none focus:ring-2 focus:ring-sage/40" />
+          <button type="submit" class="w-full bg-sage text-white px-6 py-3.5 rounded-full font-semibold hover:bg-sage-dark transition-colors shadow-sm">Send Me the Free Checklist &rarr;</button>
+        </form>
+
+        <p class="text-xs text-graysoft mt-4">No spam, ever. Just the good stuff. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ What's inside ============ -->
+  <section class="max-w-4xl mx-auto px-6 py-16 md:py-20">
+    <h2 class="font-display text-3xl font-semibold text-center mb-10">What's Inside the Checklist</h2>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl border border-line bg-white p-6 shadow-sm">
+        <div class="text-3xl mb-3" aria-hidden="true">&#128161;</div>
+        <h3 class="font-display text-lg font-semibold mb-2">Smart Lighting</h3>
+        <p class="text-sm text-graysoft">LED strips, pendant hacks, smart plugs, bias lighting &mdash; every trick to ditch the builder-grade look.</p>
+      </div>
+
+      <div class="rounded-2xl border border-line bg-white p-6 shadow-sm">
+        <div class="text-3xl mb-3" aria-hidden="true">&#128274;</div>
+        <h3 class="font-display text-lg font-semibold mb-2">Smart Security</h3>
+        <p class="text-sm text-graysoft">Cameras, doorbells, and sensors that protect your space without a single screw.</p>
+      </div>
+
+      <div class="rounded-2xl border border-line bg-white p-6 shadow-sm">
+        <div class="text-3xl mb-3" aria-hidden="true">&#127777;</div>
+        <h3 class="font-display text-lg font-semibold mb-2">Smart Climate</h3>
+        <p class="text-sm text-graysoft">AC controllers, air purifiers, and humidity monitors you can set up in seconds.</p>
+      </div>
+    </div>
+
+    <p class="text-center text-graysoft mt-8">Plus a <strong class="text-ink">move-out removal guide</strong> for every single upgrade so you never lose a penny of your deposit.</p>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="bg-ink text-[#cfc7bd]">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-8">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="font-display text-xl text-white mb-3">The Reversible Home</div>
+          <p class="text-sm leading-relaxed">Beautiful, intelligent, fully reversible smart home upgrades for renters. No drilling. No damage. No deposit drama.</p>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
+            <li><a href="shop-my-rental.html" class="hover:text-white">Shop My Rental</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-xs uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="privacy.html" class="hover:text-white">Privacy &amp; Affiliate Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-xl bg-white/5 border border-white/10 p-5 text-sm leading-relaxed">
+        <strong class="text-white">Affiliate Disclaimer:</strong> The Reversible Home is a participant in affiliate programs, including the Amazon Services LLC Associates Program. Some links on this site are affiliate links, meaning we may earn a small commission if you make a purchase &mdash; at no extra cost to you. <em>As an Amazon Associate, we earn from qualifying purchases.</em>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-3 text-xs text-[#9d958b]">
+        <span>&copy; 2026 The Reversible Home. All rights reserved.</span>
+        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
